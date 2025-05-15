@@ -1,0 +1,106 @@
+{
+   "version": "6",
+   "dialect": "sqlite",
+   "id": "d44c60dd-3f15-467f-a621-a46db60171af",
+   "prevId": "d511fe3c-9965-42dd-942c-e0c401821e94",
+   "tables": {
+      "nft_game_nft_images": {
+         "name": "nft_game_nft_images",
+         "columns": {
+            "id": {
+               "name": "id",
+               "type": "integer",
+               "primaryKey": true,
+               "notNull": true,
+               "autoincrement": true
+            },
+            "token_id": {
+               "name": "token_id",
+               "type": "integer",
+               "primaryKey": false,
+               "notNull": true,
+               "autoincrement": false
+            },
+            "owner_address": {
+               "name": "owner_address",
+               "type": "text",
+               "primaryKey": false,
+               "notNull": true,
+               "autoincrement": false
+            },
+            "image_data": {
+               "name": "image_data",
+               "type": "text",
+               "primaryKey": false,
+               "notNull": true,
+               "autoincrement": false
+            },
+            "name": {
+               "name": "name",
+               "type": "text",
+               "primaryKey": false,
+               "notNull": true,
+               "autoincrement": false
+            },
+            "description": {
+               "name": "description",
+               "type": "text",
+               "primaryKey": false,
+               "notNull": false,
+               "autoincrement": false
+            },
+            "rarity": {
+               "name": "rarity",
+               "type": "integer",
+               "primaryKey": false,
+               "notNull": true,
+               "autoincrement": false
+            },
+            "power": {
+               "name": "power",
+               "type": "integer",
+               "primaryKey": false,
+               "notNull": true,
+               "autoincrement": false
+            },
+            "created_at": {
+               "name": "created_at",
+               "type": "integer",
+               "primaryKey": false,
+               "notNull": true,
+               "autoincrement": false,
+               "default": "CURRENT_TIMESTAMP"
+            },
+            "updated_at": {
+               "name": "updated_at",
+               "type": "integer",
+               "primaryKey": false,
+               "notNull": true,
+               "autoincrement": false,
+               "default": "CURRENT_TIMESTAMP"
+            }
+         },
+         "indexes": {
+            "nft_game_nft_images_token_id_unique": {
+               "name": "nft_game_nft_images_token_id_unique",
+               "columns": ["token_id"],
+               "isUnique": true
+            }
+         },
+         "foreignKeys": {},
+         "compositePrimaryKeys": {},
+         "uniqueConstraints": {},
+         "checkConstraints": {}
+      }
+   },
+   "views": {},
+   "enums": {},
+   "_meta": {
+      "schemas": {},
+      "tables": {},
+      "columns": {}
+   },
+   "internal": {
+      "indexes": {}
+   }
+}
