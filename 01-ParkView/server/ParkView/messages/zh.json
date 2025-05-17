@@ -1,0 +1,195 @@
+{
+    "about": {
+        "hero": {
+            "title": "重新定义车位租赁体验",
+            "description": "我们致力于打造去中心化的车位租赁生态系统，通过区块链技术为用户提供透明、安全、高效的Web3出行服务"
+        },
+        "stats": {
+            "clients": "服务客户",
+            "vehicles": "车辆数量",
+            "cities": "服务城市",
+            "years": "成立年限"
+        },
+        "mission": {
+            "title": "使命",
+            "description": "连接传统租车与Web3世界，构建去中心化的车位资产流通新范式"
+        },
+        "vision": {
+            "title": "愿景",
+            "description": "打造高确定性的Web3出行生态系统，成为全球领先的去中心化车位资产管理平台"
+        },
+        "values": {
+            "title": "价值观",
+            "description": "诚信、创新、专业、共赢"
+        },
+        "technology": {
+            "title": "泊车链技术",
+            "subtitle": "引领行业革新，打造智能租车新生态",
+            "blockchain": {
+                "title": "区块链技术",
+                "description": "采用先进的区块链技术，确保交易透明和数据安全，为用户提供可信赖的租车服务平台"
+            },
+            "smartContract": {
+                "title": "智能合约",
+                "description": "通过智能合约自动化处理租赁流程，提高效率的同时确保交易的公平性和安全性"
+            },
+            "digitalIdentity": {
+                "title": "数字身份",
+                "description": "创新的数字身份认证系统，为用户提供安全便捷的身份验证和信用评估"
+            }
+        },
+        "story": {
+            "title": "我们的故事",
+            "description1": "成立于2024年，始终坚持\"用户至上\"的服务理念。我们拥有业内领先的车位管理系统和专业的服务团队，为客户提供全方位的租车位解决方案。",
+            "description2": "从最初的几十个车位发展到如今覆盖全国的租赁网络，我们始终不忘初心，持续创新，为打造中国最值得信赖的车位租赁品牌而不懈努力。"
+        },
+        "team": {
+            "title": "核心团队",
+            "roles": {
+                "ceo": "创始人兼首席执行官",
+                "cto": "技术总监",
+                "cmo": "市场总监"
+            }
+        }
+    },
+    "wallet": {
+        "connect": "连接钱包",
+        "connected": "已连接"
+    },
+    "header": {
+        "slogan": "专业车位租赁，竭诚为您服务！"
+    },
+    "nav": {
+        "home": "首页",
+        "myParking": "我的车位",
+        "about": "关于我们",
+        "policy": "政策",
+        "contact": "联系我们",
+        "name": "===北京市车位租赁系统===",
+        "language": "语言选择",
+        "chinese": "中文",
+        "english": "英文",
+        "share": "欢迎分享",
+        "shareText": "很棒的东西记得给朋友分享~"
+    },
+    "contact": {
+        "title": "关于我们",
+        "image": {
+            "alt": "公司大楼"
+        },
+        "intro": "车位租赁平台自上线以来，一直专注为广大客户提供优质、便捷的车位租赁服务。",
+        "thanks": "感谢您选择我们的车位租赁服务！如果您在使用过程中有任何疑问或需要帮助，请随时通过以下方式联系我们。",
+        "service": {
+            "hotline": "客服热线：400-123-4567",
+            "hours": "工作时间：周一至周日，9:00 - 21:00"
+        },
+        "commitment": "我们致力于为您提供最优质的服务，您的满意是我们最大的动力。期待您的联系！"
+    },
+    "myParking": {
+        "title": "车位列表（包括租用和自有）",
+        "addParking": "添加车位",
+        "modal": {
+            "title": "提交车位信息",
+            "confirm": "确认提交",
+            "cancel": "取消",
+            "form": {
+                "name": {
+                    "label": "车位名称",
+                    "placeholder": "例如：朝阳区停车位 1",
+                    "required": "请输入车位名称"
+                },
+                "picture": {
+                    "label": "车位图片",
+                    "required": "请上传车位图片",
+                    "upload": "上传"
+                },
+                "price": {
+                    "label": "价格（¥/天）",
+                    "placeholder": "例如：100",
+                    "required": "请输入价格"
+                },
+                "location": {
+                    "label": "地址",
+                    "placeholder": "例如：北京市朝阳区 xxx",
+                    "required": "请输入地址"
+                }
+            }
+        },
+        "parkingCard": {
+            "owned": "自有",
+            "rented": "租赁",
+            "actions": {
+                "terminate": "退租",
+                "edit": "修改",
+                "delete": "删除"
+            }
+        },
+        "upload": {
+            "imageType": "只能上传 JPG/PNG 格式的图片！",
+            "imageSize": "图片大小不能超过 2MB！"
+        }
+    },
+    "policy": {
+        "title": "政策与法律声明",
+        "basicPolicy": {
+            "title": "基本政策",
+            "intro1": "车位租赁平台自上线以来，一直专注为广大客户提供优质、便捷的车位租赁服务。",
+            "intro2": "作为一个专业的车位租赁平台，我们致力于满足各类客户的车位租赁需求，为您提供最合适的租赁方案。",
+            "welcome": "欢迎使用我们的车位租赁服务！为了确保您能够顺利、愉快地使用我们的服务，请仔细阅读以下政策内容：",
+            "rental": {
+                "title": "1. 租赁政策",
+                "content": "租赁期限：车位租赁期限从租赁生效开始，至租赁结束。租赁期满后，如需续租，请提前 [3] 天联系客服办理续租手续。\n提前解约：如需提前解约，需提前 [3] 天书面通知我们，并支付相应的违约金。违约金的具体金额请参考租赁合同。"
+            },
+            "fees": {
+                "title": "2. 费用标准",
+                "content": "租金：以在租赁系统首页地图上每个待租售的车位标价为准！"
+            },
+            "rules": {
+                "title": "租赁规则",
+                "items": [
+                    "租期灵活，可选择月租或年租",
+                    "提前3天申请可办理续租手续",
+                    "如需提前解约，请提前3天通知",
+                    "租金按实际使用天数计算"
+                ]
+            }
+        },
+        "legal": {
+            "title": "法律声明",
+            "userAgreement": "用户协议",
+            "privacyPolicy": "隐私政策",
+            "disclaimer": "免责声明"
+        }
+    },
+    "parkingSpot": {
+        "details": {
+            "id": "车位序号",
+            "status": {
+                "label": "车位状态",
+                "available": "可租赁 ✅",
+                "rented": "已租出 ❌"
+            },
+            "location": "车位地址",
+            "price": "车位租金",
+            "priceUnit": "￥/天",
+            "owner": "车位业主",
+            "createTime": "创建时间",
+            "updateTime": "更新时间"
+        },
+        "rental": {
+            "title": "租赁时间",
+            "button": "租赁",
+            "success": "租赁成功",
+            "failed": "租赁失败",
+            "confirm": "确认租赁",
+            "processing": "处理中...",
+            "connectWallet": "请先连接钱包"
+        },
+        "transaction": {
+            "rate": "MNT/CNY 汇率",
+            "amount": "支付金额",
+            "success": "交易成功，区块号：",
+            "failed": "交易失败"
+        }
+    }
+}

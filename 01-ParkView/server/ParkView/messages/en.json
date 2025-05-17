@@ -1,0 +1,195 @@
+{
+    "about": {
+        "hero": {
+            "title": "Redefining Parking Space Rental Experience",
+            "description": "We are committed to building a decentralized parking space rental ecosystem, providing transparent, secure, and efficient Web3 travel services through blockchain technology"
+        },
+        "stats": {
+            "clients": "Clients Served",
+            "vehicles": "Vehicles",
+            "cities": "Cities Served",
+            "years": "Years Established"
+        },
+        "mission": {
+            "title": "Mission",
+            "description": "Connecting traditional car rental with the Web3 world, building a new paradigm for decentralized parking asset circulation"
+        },
+        "vision": {
+            "title": "Vision",
+            "description": "Create a highly deterministic Web3 travel ecosystem and become the world's leading decentralized parking asset management platform"
+        },
+        "values": {
+            "title": "Values",
+            "description": "Integrity, Innovation, Professionalism, Win-win"
+        },
+        "technology": {
+            "title": "Parking Chain Technology",
+            "subtitle": "Leading Industry Innovation, Creating New Smart Rental Ecosystem",
+            "blockchain": {
+                "title": "Blockchain Technology",
+                "description": "Adopting advanced blockchain technology to ensure transaction transparency and data security, providing a reliable rental service platform for users"
+            },
+            "smartContract": {
+                "title": "Smart Contracts",
+                "description": "Automating rental processes through smart contracts, improving efficiency while ensuring transaction fairness and security"
+            },
+            "digitalIdentity": {
+                "title": "Digital Identity",
+                "description": "Innovative digital identity authentication system, providing secure and convenient identity verification and credit assessment for users"
+            }
+        },
+        "story": {
+            "title": "Our Story",
+            "description1": "Founded in 2024, we have always adhered to the service concept of 'Customer First'. We have an industry-leading parking space management system and professional service team, providing comprehensive parking space rental solutions for customers.",
+            "description2": "From the initial dozens of parking spaces to today's nationwide rental network, we never forget our original intention and continue to innovate, striving to create China's most trusted parking space rental brand."
+        },
+        "team": {
+            "title": "Core Team",
+            "roles": {
+                "ceo": "Founder & CEO",
+                "cto": "CTO",
+                "cmo": "CMO"
+            }
+        }
+    },
+    "wallet": {
+        "connect": "Connect Wallet",
+        "connected": "Connected"
+    },
+    "header": {
+        "slogan": "Professional Parking Space Rental!"
+    },
+    "nav": {
+        "home": "Home",
+        "myParking": "My Parking",
+        "about": "About Us",
+        "policy": "Policy",
+        "contact": "Contact Us",
+        "name": "Beijing Parking Rental System",
+        "language": "Language",
+        "chinese": "Chinese",
+        "english": "English",
+        "share": "Share",
+        "shareText": "Share with your friends!"
+    },
+    "contact": {
+        "title": "About Us",
+        "image": {
+            "alt": "Company Building"
+        },
+        "intro": "Since its launch, the parking space rental platform has been dedicated to providing high-quality, convenient parking space rental services to our customers.",
+        "thanks": "Thank you for choosing our parking space rental service! If you have any questions or need assistance during use, please feel free to contact us through the following methods.",
+        "service": {
+            "hotline": "Customer Service Hotline: 400-123-4567",
+            "hours": "Working Hours: Monday to Sunday, 9:00 - 21:00"
+        },
+        "commitment": "We are committed to providing you with the highest quality service. Your satisfaction is our greatest motivation. Looking forward to hearing from you!"
+    },
+    "myParking": {
+        "title": "Parking List (Including Rented and Owned)",
+        "addParking": "Add Parking",
+        "modal": {
+            "title": "Submit Parking Information",
+            "confirm": "Confirm Submit",
+            "cancel": "Cancel",
+            "form": {
+                "name": {
+                    "label": "Parking Name",
+                    "placeholder": "e.g., Chaoyang District Parking 1",
+                    "required": "Please enter parking name"
+                },
+                "picture": {
+                    "label": "Parking Picture",
+                    "required": "Please upload parking picture",
+                    "upload": "Upload"
+                },
+                "price": {
+                    "label": "Price (¥/day)",
+                    "placeholder": "e.g., 100",
+                    "required": "Please enter price"
+                },
+                "location": {
+                    "label": "Address",
+                    "placeholder": "e.g., Chaoyang District, Beijing xxx",
+                    "required": "Please enter address"
+                }
+            }
+        },
+        "parkingCard": {
+            "owned": "Owned",
+            "rented": "Rented",
+            "actions": {
+                "terminate": "Terminate",
+                "edit": "Edit",
+                "delete": "Delete"
+            }
+        },
+        "upload": {
+            "imageType": "You can only upload JPG/PNG file!",
+            "imageSize": "Image must smaller than 2MB!"
+        }
+    },
+    "policy": {
+        "title": "Policies and Legal Statements",
+        "basicPolicy": {
+            "title": "Basic Policies",
+            "intro1": "Since its launch, the parking space rental platform has been dedicated to providing high-quality, convenient parking space rental services.",
+            "intro2": "As a professional parking space rental platform, we are committed to meeting various customer parking needs and providing the most suitable rental solutions.",
+            "welcome": "Welcome to use our parking space rental service! To ensure you can use our services smoothly and pleasantly, please read the following policy content carefully:",
+            "rental": {
+                "title": "1. Rental Policy",
+                "content": "Rental Period: The parking space rental period starts from the effective date until the end of the rental. If renewal is needed, please contact customer service [3] days in advance to process the renewal.\nEarly Termination: If early termination is needed, written notice must be given [3] days in advance, and corresponding penalty fees must be paid. For specific penalty amounts, please refer to the rental contract."
+            },
+            "fees": {
+                "title": "2. Fee Standards",
+                "content": "Rent: Based on the price marked for each available parking space on the rental system homepage map!"
+            },
+            "rules": {
+                "title": "Rental Rules",
+                "items": [
+                    "Flexible rental period, monthly or yearly options available",
+                    "Apply 3 days in advance for renewal",
+                    "Notify 3 days in advance for early termination",
+                    "Rent calculated based on actual usage days"
+                ]
+            }
+        },
+        "legal": {
+            "title": "Legal Statements",
+            "userAgreement": "User Agreement",
+            "privacyPolicy": "Privacy Policy",
+            "disclaimer": "Disclaimer"
+        }
+    },
+    "parkingSpot": {
+        "details": {
+            "id": "Parking Spot ID",
+            "status": {
+                "label": "Status",
+                "available": "Available ✅",
+                "rented": "Rented ❌"
+            },
+            "location": "Location",
+            "price": "Price",
+            "priceUnit": "¥/day",
+            "owner": "Owner",
+            "createTime": "Create Time",
+            "updateTime": "Update Time"
+        },
+        "rental": {
+            "title": "Rental Period",
+            "button": "Rent",
+            "success": "Rental successful",
+            "failed": "Rental failed",
+            "confirm": "Confirm rental",
+            "processing": "Processing...",
+            "connectWallet": "Please connect wallet first"
+        },
+        "transaction": {
+            "rate": "MNT/CNY Exchange Rate",
+            "amount": "Payment Amount",
+            "success": "Transaction successful, Block number:",
+            "failed": "Transaction failed"
+        }
+    }
+}
