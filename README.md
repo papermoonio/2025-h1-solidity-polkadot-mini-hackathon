@@ -1,165 +1,237 @@
-# PolkaPlay Mini Hack：构建Web3应用
+Author:Curtisyan江南易
+学号：1906
+GitHub:https://github.com/CurtisYan/blockchain-lottery
+前言：目前该项目只是做了个基础版的功能，完整版是作者的完整构思。以后该代码还会维护，联系方式在末尾。首次使用可以看看说明文件目录下单完整版功能说明，该项目还有很大潜力
+！！！功能说明在 /说明文件/基础版大纲 ！！！
+在线预览此 DAPP：https://lottery-app-ivory.vercel.app/
+演示视频：https://www.bilibili.com/video/BV146JAzHEUu/?share_source=copy_web&vd_source=1ef6bbd8ba59bed719b19befcbd89f5a
 
-## 报名链接
+测试网领水：https://faucet.moonbeam.network/
+ 部署的合约地址：0x84F045AB0F7Fe1278A1D2fb2E334409894A8E35D
+ 查询链接:https://moonbase.moonscan.io/address/0x84F045AB0F7Fe1278A1D2fb2E334409894A8E35D
+# 区块链去中心化抽奖平台
 
-https://lu.ma/dwa3t6jw
+基于区块链技术的公平、透明的抽奖系统，所有过程均在链上进行，无法篡改。本项目包含智能合约和前端应用两部分。（前端在 lottery-dapp 目录里）
 
-## overview ​活动背景
+![抽奖平台截图](/img1.png)
 
-​💡 从一个想法出发，完成你人生第一个链上 DApp
+## 功能特点
 
-​📕 作为《Solidity on Polkadot》开发者教育课程的特别环节，我
+- 🔗 基于区块链，公开透明，无法篡改
+- 🎮 任何人都可以创建和参与抽奖
+- 💰 自动化奖池管理和奖金分配
+- 🔒 去中心化设计，无需信任第三方
+- 🌐 支持多种网络（Moonbase Alpha测试网等）
 
-​们特别策划了本次 mini 黑客松活动，鼓励每一位参与者将课程所学
+## 技术栈
 
-​应用于真实的产品创作中。不论你是 Web3 开发初学者，还是想探
+### 智能合约
+- Solidity ^0.8.0
+- Hardhat
+- OpenZeppelin合约库
 
-​索 Polkadot 平行链生态的开发者，这场实验性质的黑客松，都是你
+### 前端
+- Next.js
+- TypeScript
+- ethers.js
+- TailwindCSS
+- shadcn/ui组件库
 
-​打磨想法、展示成果、收获激励的最好机会。
+## 目录结构
 
-## 通过参加本次黑客松，你将​收获 ​
+```
+/
+├── contracts/                 # 智能合约代码
+├── scripts/                   # 部署脚本
+├── lottery-dapp/              # 前端应用
+├── test/                      # 合约测试
+├── hardhat.config.ts          # Hardhat配置
+└── README.md                  # 项目说明
+```
 
-📌 产品化思维训练：从创意出发，学会构建链上应用的完整逻辑与结构。
+## 快速开始
 
-​📌 Web3 合约实战：亲手部署合约到 PolkaVM，掌握核心开发工具与流程。
+### 前提条件
 
-​📌 项目复现能力：学会清晰表达项目，实现从代码到文档的完整交付。
+- Node.js v16+
+- npm 或 yarn
+- MetaMask钱包（或其他Web3钱包）
+- 测试网络ETH（如Moonbase Alpha测试网的DEV代币）
 
-​📌 拓展开发人脉：结识一群认真 build 的朋友，激发更多灵感与合作。
+### 1. 克隆仓库
 
-​📌 构建创造信心：完成第一个链上作品，真正成为 Web3 创作者。
+```bash
+git clone https://github.com/curtisyan/blockchain-lottery.git
+cd blockchain-lottery
+```
 
-​📌 激励与奖励机制：获得结业证书、社区曝光、生态推荐与实物周边。
+### 2. 安装依赖
 
-​
+```bash
+# 安装根目录依赖（合约相关）
+npm install
 
-## 可选赛题 ​
+# 安装前端依赖
+cd lottery-dapp
+npm install
+cd ..
+```
 
-方向不限，但必须是在 Polkadot 生态新构建的项目，可参考以下可选赛题方向：
+## 智能合约部署
 
-​📓 DEX最小可用版本
+### 1. 设置环境变量
 
-​📔 链上抽签应用
+创建`.env`文件:
 
-​📕 简单的NFT铸造平台
+```bash
+cp .env.example .env
+```
 
-​📗 测试代币 Launchpad
+编辑`.env`文件，填写以下内容:
 
-​📘 简单的多签
+```
+MOONBASE_URL=https://rpc.testnet.moonbeam.network
+PRIVATE_KEY=你的部署钱包私钥
+```
 
-​📙 简易的钱包
+注意：**请勿在公共仓库中提交包含私钥的文件！**
 
-​📚 有趣的游戏
+### 2. 编译合约
 
-## 奖金设置
+```bash
+npx hardhat compile
+```
 
-​凡按「官方提交规范」完整【提交】项目的参与者，均有资格获得相应奖项及奖金。
+### 3. 部署合约
 
-​🥇 一等奖：500U X 1
+```bash
+# 部署到Moonbase Alpha测试网
+npx hardhat run scripts/deploy_LotteryFactory.ts --network moonbase
+```
 
-​🥈 二等奖：300U X 1
+部署脚本会自动:
+- 部署LotteryFactory合约
+- 将ABI文件复制到前端目录
+- 更新前端环境变量
 
-​🥉 三等奖：200U X 1
+### 4. 验证合约（可选）
 
-​🛠️ 最佳开发者/团队：瓜分 500U 奖金池
+```bash
+npx hardhat verify --network moonbase 部署的合约地址
+```
 
-奖励对象：在技术实现方面表现优秀者，包含：
+## 前端应用运行
 
-创新性的代码架构
+### 1. 设置环境变量
 
-复杂项目部署成功
+如果部署脚本没有自动创建，则手动创建`lottery-dapp/.env.local`文件:
 
-极高完成度的交互体验
+```
+NEXT_PUBLIC_LOTTERY_FACTORY_ADDRESS=你的合约地址
+```
 
-​🪜 最勤劳开发者/团队：瓜分 500U 奖金池
+### 2. 启动开发服务器
 
-奖励对象：在部署过程中主动反馈、定位并报告 PolkaVM问题者
+```bash
+cd lottery-dapp
+npm run dev
+```
 
-评选标准：
+访问 http://localhost:3000 打开应用。
 
-提交有效 Issue / 报告
+### 3. 构建生产版本
 
-提供复现方式
+```bash
+cd lottery-dapp
+npm run build
+npm run start
+```
 
-说明问题定位路径
+## 使用指南
 
-有助于 PolkaVM 社区改进生态基础设施
+### 连接钱包
 
-💡 说明：由于 PolkaVM 当前仍在快速迭代中，我们希望通过本次活动收集更多高质量的
-bug 报告与测试反馈，推动生态发展。
+1. 安装MetaMask（或其他兼容钱包）
+2. 切换到Moonbase Alpha测试网
+3. 在应用中点击"连接钱包"按钮
 
-## 时间安排
+### 创建抽奖
 
-​⏰ 4月17日 —— 黑客松报名开始
+1. 点击"创建新的抽奖"按钮
+2. 填写抽奖信息：
+   - 抽奖ID（唯一标识）
+   - 抽奖名称
+   - 参与费用（DEV代币）
+   - 开奖时间
+3. 提交，确认交易
 
-​⏳ 5月18日20:00 UTC+8 —— 报名截止
+### 参与抽奖
 
-​👨🏻‍💻 5月27日—— 优秀项目作品展示
+1. 浏览抽奖列表或通过ID直接访问
+2. 点击"参与"按钮
+3. 支付参与费用
+4. 确认交易
 
-## office hours
+### 开奖与领奖
 
-​⏰ 4月25日 20:00 UTC+8 —— 规则分享+线上组队直播（周俊）
+1. 抽奖创建者可在开奖时间后点击"开奖"按钮
+2. 中奖者可点击"领取奖金"按钮领取奖池金额
 
-​⏰ 4月29日 20:00 UTC+8 —— 黑客松部署合约出现 Bug处理建议 （大锤）
+## 部署到线上环境
 
-​⏰ 5月9日 20:00 UTC+8 —— minidex 讲解 （周俊）
+### 1. 前端部署
 
-​⏰ 5月16日 20:00 UTC+8 —— Bug 复现 （大锤）
+可以将前端部署到Vercel、Netlify等平台：
 
-## 评分规则
+```bash
+# 使用Vercel部署
+cd lottery-dapp
+npm i -g vercel
+vercel
+```
 
-总分为100分
+### 2. 合约部署到主网
 
-| 评分维度 | 权重 | 细分项           | 说明                                                   | 分值参考 |
-| -------- | ---- | ---------------- | ------------------------------------------------------ | -------- |
-|          |      |                  | 合约是否实现项目声明的主要功能，逻辑是否合理、结构清晰 |          |
-|          |      |                  | 是否具备良好的命名规范、模块清晰、注释完整             |          |
-| 技术类   | 50   | 合约代码质量     | 是否考虑边界情况，避免常见错误（如溢出、未验证参数等） | 50       |
-|          |      |                  | 是否考虑常见安全风险（如重入攻击、访问控制）           |          |
-|          | 10   | 运行与交互体验   | 合约在 PolkaVM 上成功部署并可验证                      | 10       |
-|          |      |                  | 合约函数可通过前端脚本或 Remix 成功调用、结果正确      |          |
-|          | 10   | UI展示           | 是否有简单界面或交互体验                               | 10       |
-|          | 5    | 测试覆盖情况     | 项目是否提供测试用例或演示交互脚本                     | 5        |
-|          |      |                  | 关键函数是否都被测试验证                               |          |
-|          | 5    | 项目文档质量     | 是否清晰说明如何安装依赖与部署步骤                     | 5        |
-|          |      |                  | 合约模块及项目功能是否描述清晰                         |          |
-|          |      |                  | 是否提供交互方式示例或前端/视频演示                    |          |
-| 商务类   | 10   | 项目创意与可行性 | 项目是否有亮点、与已有项目有何差异                     | 10       |
-|          |      |                  | 是否具备实际场景价值或未来扩展空间                     |          |
-|          | 10   | Demo 展示效果    | 是否包含页面/脚本/交互界面                             | 10       |
-|          |      |                  | 界面简洁，操作易理解，体现用户思维                     |          |
+```bash
+# 编辑hardhat.config.ts, 添加主网配置
+# 然后执行
+npx hardhat run scripts/deploy_LotteryFactory.ts --network mainnet
+```
 
-根据总分排名，得出最终获奖团队
+## 常见问题
 
-## 「官方提交规范」如下：
+### 合约交互失败
 
-### 所有参赛项目需满足以下基本要求，才视为“有效提交”：
+- 检查钱包是否连接到正确网络
+- 确认账户有足够的DEV代币（用于支付gas费）
+- 查看浏览器控制台错误信息
 
-项目代码可根据 README.md中描述进行成功编译与运行；
+### 钱包连接问题
 
-项目已成功部署到 Asset Hub，并提供可追踪信息（合约地址 + 交易 Hash）；
+- 刷新页面
+- 重启钱包应用
+- 确认浏览器允许钱包扩展访问
 
-### 提交内容包括：
+### 合约不存在错误
 
-代码仓库链接（Github）
+- 确认环境变量中的合约地址正确
+- 验证合约已在当前网络上部署
+- 检查ABI文件是否正确
 
-部署信息（含合约地址、部署日志截图）
+## 贡献指南
 
-演示文档或交互Demo（可选加分）
+欢迎提交Pull Request或Issue！
 
-项目描述（功能说明 + 所用工具等）
+1. Fork项目
+2. 创建你的特性分支 (`git checkout -b feature/amazing-feature`)
+3. 提交你的修改 (`git commit -m 'Add some amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 打开Pull Request
 
-## 如何提交
+## 许可证
 
-从项目模版 00-template 拷贝一份，更改项目编号和名称,
+MIT
 
-比如01-game。代码完成后提交PR到Repo，等待Merge。
+## 联系方式
 
-项目描述放到README 文件，方便联系学员和了解项目。
-
-更新.gitignore，只需要提交自己开发的部分，lib库，依赖包，编译中间结果，可执行程序等不要提交。
-
-代码结构清晰，方便老师验证和评审。
-
-禁止出现发币，赌博之类违规的描述。
+realthat@foxmail.com
