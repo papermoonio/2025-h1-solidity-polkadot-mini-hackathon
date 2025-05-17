@@ -1,0 +1,28 @@
+{
+  "name": "starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "next": "15.1.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "viem": "^2.27.2",
+    "wagmi": "^2.14.16"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@polkadot/api": "^15.9.3",
+    "@polkadot/keyring": "^13.4.4",
+    "dotenv": "^16.5.0",
+    "hardhat-resolc": "^0.0.8",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

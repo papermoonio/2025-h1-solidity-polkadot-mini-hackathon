@@ -1,0 +1,23 @@
+{
+  "name": "contracts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "export": "npx tsc && node dist/exportContracts.js",
+    "build": "npx tsc && node dist/build.js",
+    "deploy-contracts": "npx tsc && node dist/deploy.js"
+  },
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@parity/revive": "^0.0.7",
+    "@polkadot-labs/hdkd": "^0.0.10",
+    "@polkadot-labs/hdkd-helpers": "^0.0.10",
+    "@scure/bip32": "^1.6.1",
+    "@scure/bip39": "^1.5.1",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.13.4",
+    "micro-sr25519": "^0.1.0"
+  }
+}
